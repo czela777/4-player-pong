@@ -152,14 +152,14 @@ class PongGame(Widget):
 
     def on_touch_move(self, touch):
         if touch.x < self.width / 3:
-            if touch.y < self.height / 2 - 50:
+            if touch.y < self.height / 2 - (self.player1.width/2):
                 self.player1.center_y = touch.y
-            elif touch.y > self.height / 2 + 50:
+            elif touch.y > self.height / 2 + (self.player1.width/2):
                 self.player3.center_y = touch.y
         if touch.x > self.width - self.width / 3:
-            if touch.y < self.height / 2 - 50:
+            if touch.y < self.height / 2 - (self.player1.width/2):
                 self.player2.center_y = touch.y
-            elif touch.y > self.height / 2 + 50:
+            elif touch.y > self.height / 2 + (self.player1.width/2):
                 self.player4.center_y = touch.y
     def play(self):
         self.pup.visible=0
