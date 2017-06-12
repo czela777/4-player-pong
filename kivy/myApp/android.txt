@@ -1,0 +1,3 @@
+title=<4 player pong>
+author=<Krzysztof>
+orientation=<portrait|landscape>
